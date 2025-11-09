@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islamic Educator</title>
-    <link rel="stylesheet" href="styel.css">
+    <title>ISLAMIC EDUCATOR</title>
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ba1f5332f9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-bs-theme="dark">
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand text-primary" href="#">ISLAMIC EDUCATOR <i class="fa-solid fa-school"></i></a>
@@ -23,10 +22,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OUR SCHOOL</a>
+                        <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourschool.html">OUR SCHOOL</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ADMISSION</a>
@@ -45,47 +47,15 @@
             </div>
         </div>
     </nav>
-    <div class="main" style="display: flex !important; flex-direction: row;">
-        <div class="hero-banner p-5 mb-4  rounded-3" style="width: 70%;">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold text-danger">ISLAMIC EDUCATOR SCHOOL <i class="fa-solid fa-school"></i></h1>
-                <p class="col-md-8 fs-4">Islamic Educator School is an institution dedicated to providing a balanced and
-                    holistic education that integrates a comprehensive modern curriculum with core Islamic principles.
-                    The school's mission is to nurture students academically, spiritually, and morally, fostering
-                    individuals of strong character who are prepared to navigate the complexities of the modern world
-                    while remaining grounded in their faith. Alongside subjects like mathematics, science, and
-                    languages, students receive instruction in Qur'anic studies (including recitation and memorization),
-                    Hadith, Seerah (the Prophet's biography), and Islamic ethics. The educational philosophy emphasizes
-                    character development, promoting values such as honesty, respect, and compassion, and aims to
-                    develop a sense of social responsibility and a strong Islamic identity among students. Teachers act
-                    as mentors and positive Muslim role models, creating a supportive and inclusive environment where
-                    faith is an integral part of the entire learning experience, rather than a separate subject.</p>
-                <button class="btn btn-primary btn-lg" type="button">Learn More</button>
-            </div>
-        </div>
-        <div class="" style="width: 30%;">
-            <div class="col-md-12 col-lg-10">
-                <div class="login-box">
-                    <h2 class="text-center mb-4">Login</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label><i class="fa-solid fa-users"></i>
-                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label><i class="fa-solid fa-lock"></i>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary">Sign In</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <br>
+    <div class="login-container body1">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
-
-
 </body>
 
 </html>
